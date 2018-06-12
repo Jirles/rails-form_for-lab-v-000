@@ -13,7 +13,8 @@ class StudentsController < ApplicationController
   end 
   
   def create
-    raise params.inspect
+    student = Student.create(post_params)
+    redirect_to student_path(student)
   end 
   
   def update 
