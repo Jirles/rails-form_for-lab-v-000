@@ -20,9 +20,9 @@ class StudentsController < ApplicationController
   end 
   
   def update 
-    @student = set_student
-    @student.update(post_params)
-    redirect_to student_path(@student)
+    student = set_student
+    student.update(post_params)
+    redirect_to student_path(student)
   end 
   
   private 
