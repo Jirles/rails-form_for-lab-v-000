@@ -2,6 +2,7 @@ class StudentsController < ApplicationController
   
   def new 
     @student = Student.new
+    render 'students/form'
   end 
   
   def show
