@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
   
   def new 
     @student = Student.new
-    render 'students/form'
+    render 'form'
   end 
   
   def show
@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   
   def edit 
     @student = set_student
-    render 'students/form'
+    render 'form'
   end 
   
   def create
