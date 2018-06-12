@@ -415,3 +415,9 @@ SyntaxError (/home/Jirles/rails-form_for-lab-v-000/app/views/students/edit.html.
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.6ms)
+
+
+Started GET "/students/new" for 174.109.113.119 at 2018-06-12 18:01:57 +0000
+Processing by StudentsController#new as HTML
+  Rendered students/form.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 17.6ms | ActiveRecord: 0.7ms)
