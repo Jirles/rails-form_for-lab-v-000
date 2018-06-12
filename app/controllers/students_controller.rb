@@ -21,7 +21,8 @@ class StudentsController < ApplicationController
   
   def update 
     @student = set_student
-    
+    @student.update(post_params)
+    redirect_to student_path(@student)
   end 
   
   private 
