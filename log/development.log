@@ -296,3 +296,9 @@ RuntimeError ({"utf8"=>"✓", "authenticity_token"=>"d2VpVufpP1pzyQRmUMDTfw2SyUV
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+
+
+Started GET "/school_classes/new" for 174.109.113.119 at 2018-06-12 17:52:01 +0000
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 19.0ms | ActiveRecord: 0.9ms)
