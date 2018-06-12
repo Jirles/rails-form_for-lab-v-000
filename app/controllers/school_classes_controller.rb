@@ -12,7 +12,8 @@ class SchoolClassesController < ApplicationController
   end 
   
   def create
-    raise params.inspect 
+    school_class = SchoolClass.create(post_params)
+    redirect_to school_class_path(school_class)
   end 
   
   def update 
