@@ -11,6 +11,7 @@ class StudentsController < ApplicationController
   
   def edit 
     @student = set_student
+    render 'students/form'
   end 
   
   def create
