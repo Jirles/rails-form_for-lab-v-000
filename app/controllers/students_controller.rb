@@ -18,7 +18,8 @@ class StudentsController < ApplicationController
   end 
   
   def update 
-    @student = set_student
+    raise params.inspect
+    #@student = set_student
   end 
   
   private 
