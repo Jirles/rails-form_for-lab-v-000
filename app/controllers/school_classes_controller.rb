@@ -1,6 +1,7 @@
 class SchoolClassesController < ApplicationController
   def new 
     @school_class = SchoolClass.new
+    render 'form'
   end 
   
   def show
@@ -9,6 +10,7 @@ class SchoolClassesController < ApplicationController
   
   def edit 
     @school_class = set_school_class
+    render 'form'
   end 
   
   def create
