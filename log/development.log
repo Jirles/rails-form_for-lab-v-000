@@ -365,3 +365,24 @@ Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 174.109.113.119 at 2018-06-12 17:55:07 +0000
+
+
+Started GET "/students/3/edit" for 174.109.113.119 at 2018-06-12 17:57:15 +0000
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered students/edit.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.9ms)
+
+SyntaxError (/home/Jirles/rails-form_for-lab-v-000/app/views/students/edit.html.erb:3: syntax error, unexpected tLABEL
+...d=  form_for(@student), method: "patch" do |f| @output_buffe...
+...                               ^
+/home/Jirles/rails-form_for-lab-v-000/app/views/students/edit.html.erb:3: syntax error, unexpected keyword_do, expecting keyword_end
+...r(@student), method: "patch" do |f| @output_buffer.safe_appe...
+...                               ^
+/home/Jirles/rails-form_for-lab-v-000/app/views/students/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/students/edit.html.erb:3: syntax error, unexpected tLABEL
+  app/views/students/edit.html.erb:3: syntax error, unexpected keyword_do, expecting keyword_end
+  app/views/students/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
