@@ -19,7 +19,9 @@ class SchoolClassesController < ApplicationController
   end 
   
   def update 
-    @school_class = set_school_class
+    school_class = set_school_class
+    school_class.update(post_params)
+    redirect_to school_class_path(school_class)
   end 
   
   private 
