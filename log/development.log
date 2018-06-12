@@ -335,3 +335,8 @@ Processing by SchoolClassesController#show as HTML
   [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered school_classes/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/new" for 174.109.113.119 at 2018-06-12 17:54:54 +0000
+Processing by StudentsController#new as HTML
+  Rendered students/new.html.erb within layouts/application (4.2ms)
